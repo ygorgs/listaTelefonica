@@ -19,7 +19,6 @@ angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function($sc
 
 			$scope.adicionarContato = function(contato) {
 				contato.serial = SerialGenerator.generate();
-				contato.data = new Date();
 				ContatosAPI.saveContato(contato).success(function(data){
 					delete $scope.contato;
 					$scope.contatoForm.$setPristine();

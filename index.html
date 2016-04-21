@@ -17,6 +17,7 @@
 	<script src="js/value/configValue.js"></script>
 	<script src="js/directives/uiAlertDirective.js"></script>
 	<script src="js/directives/uiDateDirective.js"></script>
+	<script src="js/directives/uiAccordionDirective.js"></script>
 </head>
 <body ng-controller="listaTelefonicaCtrl">
 	<div class="jumbotron">
@@ -25,7 +26,18 @@
 		<ui-alert title="Ops, aconteceu um problema!">
 			{{error}}
 		</ui-alert> -->
-
+		<ui-accordions>
+			<ui-accordion title="Accordion 1">
+				As Tartarugas Ninja, Teenage Mutant Ninja Turtles (frequentemente abreviado como TMNT), é um grupo de quatro tartarugas antropomórficas, a quem lhes foi dado o nome de quatro artistas italianos do Renascimento, e treinadas na arte do ninjutsu por um rato sensei antropomórfico com o nome Splinter. A partir da sua casa, os esgotos de Nova Iorque, batalham contra criminosos, senhores demoníacos, criaturas mutantes e alienígenas invasores, enquanto que ao mesmo tentam tempo permanecer escondidos da sociedade. Num ou noutro ponto e em quase todas as histórias TMNT, o Shredder, líder da secção de Nova Iorque do grupo criminoso Foot Clan, é o arqui-inimigo de Splinter e das Tartarugas.
+			</ui-accordion>
+			<ui-accordion title="Accordion 2">
+				As Tartarugas Ninja, Teenage Mutant Ninja Turtles (frequentemente abreviado como TMNT), é um grupo de quatro tartarugas antropomórficas, a quem lhes foi dado o nome de quatro artistas italianos do Renascimento, e treinadas na arte do ninjutsu por um rato sensei antropomórfico com o nome Splinter. A partir da sua casa, os esgotos de Nova Iorque, batalham contra criminosos, senhores demoníacos, criaturas mutantes e alienígenas invasores, enquanto que ao mesmo tentam tempo permanecer escondidos da sociedade. Num ou noutro ponto e em quase todas as histórias TMNT, o Shredder, líder da secção de Nova Iorque do grupo criminoso Foot Clan, é o arqui-inimigo de Splinter e das Tartarugas.
+			</ui-accordion>
+			<ui-accordion title="Accordion 3">
+				As Tartarugas Ninja, Teenage Mutant Ninja Turtles (frequentemente abreviado como TMNT), é um grupo de quatro tartarugas antropomórficas, a quem lhes foi dado o nome de quatro artistas italianos do Renascimento, e treinadas na arte do ninjutsu por um rato sensei antropomórfico com o nome Splinter. A partir da sua casa, os esgotos de Nova Iorque, batalham contra criminosos, senhores demoníacos, criaturas mutantes e alienígenas invasores, enquanto que ao mesmo tentam tempo permanecer escondidos da sociedade. Num ou noutro ponto e em quase todas as histórias TMNT, o Shredder, líder da secção de Nova Iorque do grupo criminoso Foot Clan, é o arqui-inimigo de Splinter e das Tartarugas.
+			</ui-accordion>
+		</ui-accordions>
+		<hr/>
 		<input class="form-control" type="text" ng-model="criterioDeBusca" placeholder="Quem você está buscando?"/>
 		<table class="table" ng-if="contatos.length > 0">
 			<tr>
